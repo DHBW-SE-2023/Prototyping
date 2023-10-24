@@ -12,11 +12,13 @@ def read_form():
 
 @app.get("/form")
 def form_post(request: Request):
-    result = "Type a number"
+    result = "Say hello"
     return templates.TemplateResponse('form.html', context={'request': request, 'result': result})
 
 
 @app.post("/form")
-def form_post(request: Request, num: int = Form(...)):
-    result = str(num)
+def form_post(request: Request, txt: str = Form(...)):
+    result = "Rude!"
+    if txt.lower() == "hello":
+        result = "hi"
     return templates.TemplateResponse('form.html', context={'request': request, 'result': result})
