@@ -1,2 +1,2 @@
 # Prototyping
-A repository for NSFW's various protottypes
+A repository for NSFW's various prototypes
