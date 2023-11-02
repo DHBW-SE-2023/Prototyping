@@ -7,5 +7,5 @@ after cloning run:
 - ```npm init -y```
 - ```npm install --save-dev electron```
 - ```npm install python-shell ```
-- add ```"start": "electron ."``` to main.js under scripts
+- add ```"start": "electron ."``` to main.js under scripts (+ a , in front of it)
 - ```npm start```
